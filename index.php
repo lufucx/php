@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
 </head>
 <body>
-    <?php
-    $x = 5;
-    $y = 4;
-
-    echo("x=$x");
-    echo("<br> y=$y");
-    echo("<br> x+y= ") .$x + $y;
-
-    print ("<br> Aula 16/11/23");
-    ?>    
-
+    <h1>Página Inicial</h1>
+     <?php 
+     $nome = $_POST["nome"]; 
+     $senha = $_POST["senha"];
+     
+     if($nome=="Carlos" and $senha=="123")
+        header("Location: "."site.php"); 
+     else
+        print("Nome/Senha inválidos!");
+     ?>
 </body>
 </html>
